@@ -1,42 +1,49 @@
 {
   "expo": {
+    "sdkVersion": "54.0.0",
     "name": "owles",
     "slug": "owles",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/owles-icon.png",
     "scheme": "owles",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vivek.owles",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "com.vivek.owles",
+      "versionCode": 1,
+      "icon": "./assets/images/owles-icon.png",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/owles-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/owles-icon.png"
     },
     "plugins": [
-      "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/owles-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-router"
     ],
-    "experiments": {
-      "typedRoutes": true
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cbe645c8-384e-4363-8749-5c1d626d8bbd"
+      }
     }
   }
 }
